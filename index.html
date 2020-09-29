@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="emi.js"></script>
+    <div class="calculator">
+        
+        <div class="leftbox">
+           <h1>Personal Loan EMI Calculators</h1> 
+           <p class="input-form">Total Amount of Loan:</p><input id="loan" class="input-box" type="text" name="loan" value="" onkeypress="return isNumber(event)" required/>
+           
+           <p  class="input-form" >Total intrest:</p><input id="roi" class="input-box" type="text" name="roi" value=""  required/> 
+           <p  class="input-form">Terms (years):</p> <input  id="term" class="input-box" type="text" name="term" value="" onchange="myfun()" onkeypress="return isNumber(event)" required/>
+
+        </div>
+        <div class="rightbox">
+            <span class="right-title">Equated Monthly Installments (EMI) <br>
+            </span>
+            <span id="emi" class="amount">8888</span>
+           
+
+         </div>
+         
+        
+    </div>
+    <h2 class="questions">Frequently Asked Questions</h2>
+    <div class="discription">
+        <ul>
+            <li>What is an EMI?</li>
+            <p>The Equated Monthly Instalment (or EMI) consists of the principal portion of the loan amount and the interest. Therefore, EMI = principal amount + interest paid on the personal loan. The EMI, usually, remains fixed for the entire tenure of your loan, and it is to be repaid over the tenure of the loan on a monthly basis.
+               <br>
+                Mathematically, EMI is calculated as under:
+                <br>
+                P x R x (1+R)^N / [(1+R)^N-1]
+                <br>
+                P = Principal amount of the loan
+                <br>
+                R = Rate of interest
+                <br>
+                N = Number of monthly instalments.
+                <br>
+                So, say you are applying for a personal loan from Axis Bank, amounting to Rs 2,00,000 at a rate of interest of 15.5% p.a. and your loan tenure is 2 years, your EMI will be calculated as under:
+                <br>
+                EMI = 200000* 0.0129 * (1+ 0.0129)^24 = Rs 9,745 / [(1+ 0.0129)^24 ]-1
+                <br>
+                The rate of interest (R) on your loan is calculated monthly i.e. (R= Annual rate of interest/12/100). For instance, if R = 15.5% per annum, then R= 15.5/12/100 = 0.0129.
+                <br>
+                Finding it complicated? Don’t worry! Use Axis Bank’s Personal Loan EMI calculator.
+                <br>
+                Remember, the interest rate and your loan tenure are the vital deciding factors for your loan EMI. Higher the interest rate on the loan, higher will be your EMI and vice-versa. Similarly, a shorter loan tenure increases your EMI and vice versa.
+                <br>
+                Axis Bank offers Personal Loan at a competitive rate of interest. If you are young and earning a decent, steady source of income with sufficient work experience, a good number of years before retirement, have low or no EMIs, and your credit score is respectable (750 and above), you could be eligible for a personal loan at an attractive rate of interest.
+                <br>
+                Do note that during the initial months of the loan tenure, you pay more towards interest, and gradually, as you repay the loan, a higher portion is adjusted towards the principal component. This is because; EMIs are computed on a reducing balance method, which works in your favour as a borrower.</p>
+            
+
+        </ul>
+    </div>
+    
+</body>
+</html>
