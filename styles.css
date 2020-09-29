@@ -7,6 +7,7 @@ body
     background-image: url(h7.jpg);
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
     
    
     background-origin:padding-box;
